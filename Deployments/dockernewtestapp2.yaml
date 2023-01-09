@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dockernewtestapplication2
+  namespace: default
+  labels:
+    app: dockernewtestapplication2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dockernewtestapplication2
+  template:
+    metadata:
+      labels:
+        app: dockernewtestapplication2
+    spec:
+      containers:
+      - name: dockernewtestapplication2-container-01
+        image: hello-world:latest
+        ports:
+        - containerPort: 6901
+      nodeSelector:
+        ost: win
