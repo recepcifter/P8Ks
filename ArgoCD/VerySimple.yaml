@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/recepcifter/P8Ks.git
     targetRevision: HEAD
-    path: dev
+    path: ArgoCD/dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
