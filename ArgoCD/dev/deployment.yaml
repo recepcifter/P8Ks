@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: foo-app
-      image: 'ealen/echo-server:latest'
+      image: 'hello-world:latest'
   nodeSelector:
     ostype: linux
