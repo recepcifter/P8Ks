@@ -7,7 +7,9 @@ metadata:
 spec:
   containers:
     - name: foo-app
-      image: 'recepcifter/panorama:latest'
+      image: 'ealen/echo-server:latest'
+  nodeSelector:
+    ostype: linux
 ---
 kind: Service
 apiVersion: v1
@@ -28,7 +30,9 @@ metadata:
 spec:
   containers:
     - name: bar-app
-      image: 'recepcifter/panorama:latest'
+      image: 'ealen/echo-server:latest'
+  nodeSelector:
+    ostype: linux
 ---
 kind: Service
 apiVersion: v1
