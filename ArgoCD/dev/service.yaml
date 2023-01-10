@@ -6,5 +6,5 @@ spec:
   selector:
     app: foo
   ports:
-    - port: 80
+    - port: 8001
   type: LoadBalancer
