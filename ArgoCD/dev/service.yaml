@@ -7,3 +7,4 @@ spec:
     app: foo
   ports:
     - port: 8080
+  type: LoadBalancer
