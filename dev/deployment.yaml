@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: foo-app
-      image: 'ealen/echo-server:latest'
+      image: 'gcr.io/heptio-images/ks-guestbook-demo:0.2'
   nodeSelector:
     ostype: linux
